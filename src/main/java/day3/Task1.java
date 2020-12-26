@@ -45,5 +45,3 @@ public class Task1 {
 
     }
 }
-
-
