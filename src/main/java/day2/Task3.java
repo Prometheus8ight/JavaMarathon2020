@@ -9,12 +9,13 @@ public class Task3 {
         int b = scanner.nextInt();
         a++;
         if (a >= b) {
-         System.out.println("Некорректный ввод");
+            System.out.println("Некорректный ввод");
         }
         while (a < b) {
             if (a % 5 == 0 && a % 10 != 0) {
                 System.out.print(a + " ");
-            }a++;
+            }
+            a++;
         }
     }
 }

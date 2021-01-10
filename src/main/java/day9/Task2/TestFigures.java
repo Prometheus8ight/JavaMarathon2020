@@ -19,12 +19,12 @@ public class TestFigures {
     }
 
     public static double calculateRedPerimeter(Figure[] figures) {
-        double j = 0;
+        double i = 0;
         for (Figure figure : figures)
             if (figure.getColor().equals("Red")) {
-                j += figure.perimeter();
+                i += figure.perimeter();
             }
-        return j;
+        return i;
     }
 
     public static double calculateRedArea(Figure[] figures)  {

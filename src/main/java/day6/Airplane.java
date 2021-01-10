@@ -44,7 +44,7 @@ public class Airplane {
         System.out.println(producer + " " + year + " " + length + " " + weight + " " + fuel);
     }
 
-    int fillUp(int n){
-        return fuel += n;
+    int fillUp(int inputFuel){
+        return fuel += inputFuel;
     }
 }

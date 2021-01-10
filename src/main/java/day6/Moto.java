@@ -28,7 +28,7 @@ public class Moto {
     }
 
     int yearDifference(int inputYear){
-        return inputYear - yearOfIssue;
+        return Math.abs(inputYear - yearOfIssue);
     }
 }
 

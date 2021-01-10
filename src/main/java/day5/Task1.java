@@ -10,7 +10,7 @@ public class Task1 {
                 + car1.getColor() + ". Модель автомобиля: " + car1.getModel() + ".");
     }
 
-    static class Car {
+      static class Car {
         private int yearOfIssue;
         private String color;
         private String model;

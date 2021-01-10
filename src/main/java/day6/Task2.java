@@ -6,7 +6,7 @@ public class Task2 {
         boeing.info();
         boeing.setYear(2014);
         boeing.setLength(120);
-        boeing.setFuel(333);
+        boeing.fillUp(3000);
         boeing.info();
     }
 }

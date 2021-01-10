@@ -3,34 +3,31 @@ package day8;
 
 public class Task1 {
     public static void main(String[] args) {
+
+        long before = System.currentTimeMillis();
+
         StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 20001; i++)
+            sb.append(i).append(" ");
 
-        for (int i = 1; i < 20001; i++)
-            sb = sb.append(i).append(" ");
+        long after = System.currentTimeMillis();
 
-        for (int j = 1; j < 20001; j++) {
-            String n = j + " ";
-            System.out.print(n);
-        }
         System.out.print(sb);
-        System.out.println("");
-        System.out.println("cold start time " + String.format("%,12d", measure()) + " ns");
-        System.out.println("warmed JRE time " + String.format("%,12d", measure()) + " ns");
-    }
+        System.out.println("Время выполнения цикла с классом StringBuilder: " + (after - before));
 
-    private static long measure() {
-        long st, en;
-        st = System.nanoTime();
-        for (int i = 0; i < 1000000; i++) {
-            ;
+        before = System.currentTimeMillis();
+
+        String n = "";
+        for (int j = 0; j < 20001; j++) {
+            n += j + " ";
+
         }
-        en = System.nanoTime();
-        return en - st;
+        after = System.currentTimeMillis();
+        System.out.print(n);
+        System.out.println("Время выполнения цикла с классом String: " + (after - before));
+
     }
 }
-
-
-
 
 
 

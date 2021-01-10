@@ -31,7 +31,7 @@ public class Task1 {
                 cEven++;
             }
 
-            if (array[i] % 2 != 0) {
+            else {
                 cOdd++;
             }
 

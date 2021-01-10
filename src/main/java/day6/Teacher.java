@@ -3,29 +3,51 @@ package day6;
 import java.util.Random;
 
 public class Teacher {
-    String name;
-    String subject;
+    private String name;
+    private String subject;
 
     public Teacher(String name, String subject) {
         this.name = name;
         this.subject = subject;
     }
 
-    void evaluate(String student) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void evaluate(Student student) {
         Random random = new Random();
-        int grade = 2 + random.nextInt(4);
-        if (grade == 2) {
-            System.out.println("Преподаватель " + name + " оценил студента с именем "
-                    + student + " по предмету " + subject + " на оценку: неудовлетворительно.");
-        } else if (grade == 3) {
-            System.out.println("Преподаватель " + name + " оценил студента с именем "
-                    + student + " по предмету " + subject + " на оценку: удовлетворительно.");
-        } else if (grade == 4) {
-            System.out.println("Преподаватель " + name + " оценил студента с именем "
-                    + student + " по предмету " + subject + " на оценку: хорошо.");
-        } else {
-            System.out.println("Преподаватель " + name + " оценил студента с именем "
-                    + student + " по предмету " + subject + " на оценку: отлично. ");
+        int randomValue = 2 + random.nextInt(4);
+
+        String grade = "";
+        switch (randomValue) {
+            case 2:
+                grade = "неудовлетворительно";
+                break;
+            case 3:
+                grade = "удовлетворительно";
+                break;
+            case 4:
+                grade = "хорошо";
+                break;
+            case 5:
+                grade = "отлично";
+                break;
         }
+        System.out.println("Преподаватель " + name + " оценила студента с именем "
+                + student.getName() + " по предмету " + subject + " на оценку: " + grade + ".");
     }
 }
+

@@ -8,7 +8,7 @@ public class Task2 {
         while (true) {
             double x = scanner.nextDouble();
             double y = scanner.nextDouble();
-            if(y == 0){
+            if (y == 0){
                 break;
             }
             System.out.println(x / y);

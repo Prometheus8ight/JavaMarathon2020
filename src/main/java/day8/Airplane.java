@@ -60,11 +60,11 @@ public class Airplane {
         this.fuel = fuel;
     }
 
-    void info() {
+    public void info() {
         System.out.println(producer + " " + year + " " + length + " " + weight + " " + fuel);
     }
 
-    int fillUp(int inputFuel) {
+    public int fillUp(int inputFuel) {
         return fuel += inputFuel;
     }
 

@@ -6,6 +6,8 @@ public class Task1 {
         car1.setYearOfIssue(2010);
         car1.setColor("blue");
         car1.setModel("VW");
-        System.out.println(car1.yearDifference(2020));
+        Moto moto1 = new Moto(2018, "blue", "Yamaha");
+        System.out.println(car1.yearDifference(2005));
+        System.out.println(moto1.yearDifference(1300));
     }
 }
