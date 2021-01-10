@@ -16,7 +16,7 @@ public class Task1 {
         File result = new File("D:\\Programming\\JavaProjects\\JavaMarathon2020\\src\\main\\java\\day16\\result.txt");
         double sum = 0;
         int count = 0;
-        DecimalFormat dF = new DecimalFormat( "#.###" );
+        DecimalFormat dF = new DecimalFormat("#.###");
 
         try {
             Scanner scanner = new Scanner(file);
